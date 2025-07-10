@@ -23,9 +23,19 @@
 .title-color{
     color: #252432;
 }
+
+body{
+    background-color: #f5f8ff;
+}
 main{
     max-width: 1140px;
     margin: 0 auto;
+    
+}
+
+section{
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 /*Navigation Styles*/ 
@@ -87,9 +97,8 @@ nav button a{
 .action{
     display: flex;
     align-items: center;
-   gap: 250px;
-   padding-top: 100px;
-   padding-bottom: 50px;
+    gap: 250px;
+   
 }
 
 .first-sec-leftp h2{
@@ -146,4 +155,49 @@ nav button a{
     font-family: "Inter", sans-serif;
     color: rgba(0, 0, 0, 0.466);
 
+}
+
+/*3rs Section Styles*/
+
+
+
+.user-say-sec h2{
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px 20px;
+}
+.card-items{
+    display: flex;
+    gap: 20px;
+
+}
+.user-details{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    line-height: 0px;
+}
+
+.user-details img{
+    border-radius: 100px;
+    height: 50px;
+    width: 50px;
+}
+
+.user-details p{
+     font-family: "Inter", sans-serif;
+     font-size: 14px;
+     color: rgba(0, 0, 0, 0.425);
+}
+
+.user-details h5{
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.527);
 }
