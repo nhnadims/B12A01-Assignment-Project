@@ -1,0 +1,149 @@
+/*Font*/
+
+.button-text {
+        font-family: "Raleway", sans-serif;
+        font-weight: bold;
+}
+.title-text{
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+}
+.normal-text{
+    font-family: "Raleway", sans-serif;
+}
+/*
+.raleway-<uniquifier> {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+/*color*/
+.title-color{
+    color: #252432;
+}
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/*Navigation Styles*/ 
+
+header{
+
+    background-image: url('../Images/Hero-bg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px 50px 0px;
+    margin: 0 200px;
+    align-items: center;
+}
+nav img{
+    height: 40px;
+}
+
+.btn-style{
+    padding: 0px;
+    background-color: #4E47FF;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 36px 15px 36px;
+
+}
+
+nav button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    
+}
+
+.banner{
+    padding: 200px 200px;
+    text-align: center;
+}
+
+.banner h1{
+    font-size: 65px;
+    
+}
+.banner button{
+    color: #fff;
+    font-size: 16px;
+   
+    
+}
+
+/*Action Section Styles*/
+
+.action{
+    display: flex;
+    align-items: center;
+   gap: 250px;
+   padding-top: 100px;
+   padding-bottom: 50px;
+}
+
+.first-sec-leftp h2{
+    font-size: 42px;
+    font-weight: bold;
+}
+.first-sec-leftp p{
+    font-size: 24px;
+    color: #25243286;
+}
+
+.first-sec-leftp button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.first-sec-right img{
+    border-radius: 48px;
+}
+
+/*Productive Users Section Styles*/
+
+.productive-users{
+    background-color: #E5E7FF;
+    border-radius: 24px;
+    padding: 20px 160px 50px 160px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+ 
+}
+.productive-users h2{
+    font-size: 38px;
+    text-align: center;
+}
+.user-states{
+    display: flex;
+    justify-content: space-between;
+    gap: 158px;
+
+}
+.user-states h3{
+    font-family: ;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    color: #4E47FF;
+    line-height: 0;
+
+}
+
+.user-states p{
+    line-height: 0;
+    font-family: "Inter", sans-serif;
+    color: rgba(0, 0, 0, 0.466);
+
+}
