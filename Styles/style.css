@@ -34,7 +34,6 @@ body{
 main{
     max-width: 1140px;
     margin: 0 auto;
-    
 }
 
 section{
@@ -42,7 +41,11 @@ section{
     margin-bottom: 100px;
 }
 
-
+.btn-style:hover{
+    background-color: #4d47ffc7;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
 
 /*Navigation Styles*/ 
 
@@ -52,15 +55,15 @@ header{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 
 nav{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 50px 0px 50px 0px;
-    margin: 0 200px;
-    align-items: center;
+    max-width: 1140px;
+    margin: auto;
 }
 nav img{
     height: 40px;
@@ -72,14 +75,12 @@ nav img{
     border: none;
     border-radius: 10px;
     padding: 15px 36px 15px 36px;
-
 }
 
 nav button a{
     text-decoration: none;
     color: #fff;
     font-size: 16px;
-    
 }
 
 .banner{
@@ -89,13 +90,11 @@ nav button a{
 
 .banner h1{
     font-size: 65px;
-    
+    margin-bottom: 37px;
 }
 .banner button{
     color: #fff;
     font-size: 16px;
-   
-    
 }
 
 /*Action Section Styles*/
@@ -104,16 +103,17 @@ nav button a{
     display: flex;
     align-items: center;
     gap: 250px;
-   
 }
 
 .first-sec-leftp h2{
     font-size: 42px;
     font-weight: bold;
+    margin-bottom: 23px;
 }
 .first-sec-leftp p{
     font-size: 24px;
     color: #25243286;
+    margin-bottom: 23px;
 }
 
 .first-sec-leftp button a{
@@ -131,20 +131,19 @@ nav button a{
 .productive-users{
     background-color: #E5E7FF;
     border-radius: 24px;
-    padding: 20px 160px 50px 160px;
-    margin-top: 50px;
-    margin-bottom: 50px;
- 
+    padding: 50px 160px 50px 160px;
 }
 .productive-users h2{
     font-size: 38px;
     text-align: center;
+    margin-bottom: 40px;
 }
 .user-states{
     display: flex;
-    justify-content: space-between;
     gap: 158px;
-
+}
+.states-child{
+    text-align: center
 }
 .user-states h3{
     font-family: ;
@@ -152,25 +151,20 @@ nav button a{
     font-weight: bold;
     font-family: "Inter", sans-serif;
     color: #4E47FF;
-    line-height: 0;
-
 }
 
 .user-states p{
-    line-height: 0;
     font-family: "Inter", sans-serif;
     color: rgba(0, 0, 0, 0.466);
-
 }
 
 /*3rs Section Styles*/
-
-
 
 .user-say-sec h2{
     font-size: 38px;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .card{
@@ -178,16 +172,24 @@ nav button a{
     border-radius: 10px;
     padding: 20px 20px;
 }
+.card-star{
+    margin-bottom: 24px;
+}
 .card-items{
     display: flex;
     gap: 20px;
 
 }
+.card-description{
+    margin-bottom: 24px;
+}
+.card-description h4{
+    margin-bottom: 10px;
+}
 .user-details{
     display: flex;
     align-items: center;
     gap: 20px;
-    line-height: 0px;
 }
 
 .user-details img{
@@ -206,6 +208,7 @@ nav button a{
     font-family: "Raleway", sans-serif;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.527);
+    margin-bottom: 5px;
 }
 
 /*Focus Section Styles*/
@@ -234,7 +237,7 @@ nav button a{
     margin-bottom: 20px;
 }
 
-/*Contact Section Styles*/
+/*Form Section Styles*/
 
 .contact-sec h2{
     font-size: 97px;
@@ -255,24 +258,43 @@ nav button a{
      font-family: "Inter", sans-serif;
      font-weight: medium;
      font-size: 18px;
-    
 }
 
-form input{
+input[type=text] {
     width: 100%;
     height: 50px;
     background-color: #fff;
     border: 1px solid #D6DDED;
     border-radius: 10px;
-    padding-left: 20px;
     margin-bottom: 20px;
     margin-top: 10px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+input[type=text]:focus {
+    border: 1px solid #4E47FF;
+}
+input[type=email] {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #D6DDED;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+input[type=email]:focus {
+    border: 1px solid #4E47FF;
 }
 form input::placeholder{
     font-family: "Inter", sans-serif;
     font-size: 15px;
     color: rgba(0, 0, 0, 0.507);
-    
+    padding-left: 10px;
 }
 form textarea{
      width: 100%;
@@ -280,62 +302,76 @@ form textarea{
     background-color: #fff;
     border: 1px solid #D6DDED;
     border-radius: 10px;
-    padding-left: 20px;
-    padding-top: 20px;
     font-family: "Inter", sans-serif;
     font-size: 15px;
     height: 100px;
     margin-top: 10px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+textarea::placeholder{
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
-.contact-sec form button{
+textarea:focus {
+    border: 1px solid #4E47FF;
+}
+
+input[type=submit] {
     width: 100%;
     color: #fff;
     font-size: 16px;
     margin-top: 10px;
-    text-align: center;
+    display: block;
+    border: none;
+    cursor: pointer;
+    
+}
+input[type=submit]:hover{
+    background-color: #4d47ffc7;
+    transition-duration: 0.4s;
 }
 
-/*Footer Section*/
 
-
+/*Footer Section Styles*/
 
 footer{
  
     background-color: #fff;
-   
-   
+    
 }
 .footer-sec{
-    max-width: 530px;
+    
     padding-top: 100px;
     padding-bottom: 100px;
     margin: 0 auto;
-     text-align: center;
-     
+    text-align: center;
 }
 
 .footer-sec p{
     font-size: 14px;
     color: rgba(0, 0, 0, 0.493);
+    line-height: 18px;
     
 }
 
 footer ul{
     display: flex;
     gap: 30px;
+    margin-top: 20px;
+    justify-content: center;
+   
     
 }
 ul li {
     list-style: none;
 }
-.footer-menu ul li a{
+ul li a{
     text-decoration: none;
     color: rgba(0, 0, 0, 0.514);
      font-family: "Inter", sans-serif;
-     
+     font-size: 14px;
 }
-.footer-menu{
-    margin-top: 20px;
-    align-items: center;
-}
+
